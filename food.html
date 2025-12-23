@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trải Nghiệm Ẩm Thực - Gourmet</title>
+	<style>
+		body {
+			font-family: 'Playfair Display', serif;
+			margin: 0;
+			padding: 0;
+			background-color: #fffaf0;
+			color: #4a3728;
+		}
+
+		.header {
+			text-align: center;
+			padding: 60px 20px;
+			background: #fdf5e6;
+		}
+
+		.header h1 {
+			font-size: 3rem;
+			margin: 0;
+			color: #8b4513;
+		}
+
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 40px 20px;
+		}
+
+		.food-gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 20px;
+			margin-bottom: 40px;
+		}
+
+		.food-card {
+			background: white;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s;
+		}
+
+		.food-card:hover {
+			transform: scale(1.05);
+		}
+
+		.food-card img {
+			width: 100%;
+			height: 250px;
+			object-fit: cover;
+		}
+
+		.food-card-content {
+			padding: 20px;
+		}
+
+		.description {
+			line-height: 1.8;
+			font-size: 1.1rem;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+
+		.nav-home {
+			display: block;
+			width: fit-content;
+			margin: 20px auto;
+			padding: 15px 30px;
+			background: #8b4513;
+			color: white;
+			text-decoration: none;
+			border-radius: 30px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>🍽️ Hương Vị Tuyệt Hảo</h1>
+		<p>Khám phá nghệ thuật ẩm thực tinh tế</p>
+	</div>
+
+	<div class="container">
+		<div class="description">
+			<p>Chào mừng bạn đến với chuyên trang ẩm thực. Đây là nơi chúng tôi thử nghiệm các hiệu ứng hiển thị hình
+				ảnh với độ phân giải cao và màu sắc rực rỡ của các món ăn từ khắp nơi trên thế giới.</p>
+		</div>
+
+		<div class="food-gallery">
+			<div class="food-card">
+				<img src="https://loremflickr.com/400/300/food?lock=1" alt="Food 1">
+				<div class="food-card-content">
+					<h3>Món Chính Đặc Sắc</h3>
+					<p>Hương vị đậm đà, trang trí tinh tế.</p>
+				</div>
+			</div>
+			<div class="food-card">
+				<img src="https://loremflickr.com/400/300/dessert?lock=2" alt="Food 2">
+				<div class="food-card-content">
+					<h3>Tráng Miệng Ngọt Ngào</h3>
+					<p>Sự kết hợp hoàn hảo của màu sắc và vị giác.</p>
+				</div>
+			</div>
+			<div class="food-card">
+				<img src="https://loremflickr.com/400/300/coffee?lock=3" alt="Food 3">
+				<div class="food-card-content">
+					<h3>Thức Uống Đậm Đà</h3>
+					<p>Khởi đầu ngày mới với nguồn năng lượng vô tận.</p>
+				</div>
+			</div>
+		</div>
+
+		<a href="index.html" class="nav-home">🏠 Quay về trang chủ</a>
+	</div>
+</body>
+
+</html>

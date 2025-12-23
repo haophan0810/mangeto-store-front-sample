@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xu Hướng Thời Trang - Fashion</title>
+	<style>
+		body {
+			font-family: 'Playfair Display', serif;
+			margin: 0;
+			padding: 0;
+			background-color: #fafafa;
+			color: #1a1a1a;
+		}
+
+		.header {
+			text-align: center;
+			padding: 80px 20px;
+			background: #fff;
+			border-bottom: 1px solid #000;
+		}
+
+		.header h1 {
+			font-size: 4rem;
+			margin: 0;
+			letter-spacing: 10px;
+			text-transform: uppercase;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 40px auto;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 40px;
+			padding: 20px;
+		}
+
+		@media (max-width: 768px) {
+			.container {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.fashion-item {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.fashion-item img {
+			width: 100%;
+			height: 600px;
+			object-fit: cover;
+			filter: grayscale(20%);
+			transition: filter 0.5s;
+		}
+
+		.fashion-item:hover img {
+			filter: grayscale(0%);
+		}
+
+		.description {
+			padding: 40px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background: #fff;
+		}
+
+		.description h2 {
+			font-size: 2.5rem;
+			margin-bottom: 20px;
+			border-bottom: 2px solid #000;
+			padding-bottom: 10px;
+			width: fit-content;
+		}
+
+		.description p {
+			line-height: 2;
+			font-size: 1.1rem;
+			color: #444;
+		}
+
+		.footer {
+			text-align: center;
+			padding: 60px 0;
+		}
+
+		.btn-black {
+			padding: 15px 40px;
+			background: #000;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			transition: background 0.3s;
+		}
+
+		.btn-black:hover {
+			background: #333;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>Vogue Test</h1>
+		<p>Fashion & Style Showcase</p>
+	</div>
+
+	<div class="container">
+		<div class="fashion-item">
+			<img src="https://loremflickr.com/600/800/fashion,model?lock=50" alt="Fashion 1">
+		</div>
+		<div class="description">
+			<h2>Hơi Thở Thời Đại</h2>
+			<p>Trang này được thiết kế để kiểm tra sự hiển thị nhạy bén của các tông màu da, chất liệu vải và các chi
+				tiết nhỏ trong nhiếp ảnh thời trang nghệ thuật.</p>
+			<p>Sử dụng phong cách thiết kế tối giản trắng đen (editorial style), trang Fashion mang lại cảm giác cao cấp
+				và chuyên nghiệp cho hệ thống trang test của bạn.</p>
+		</div>
+
+		<div class="description">
+			<h2>Phong Cách Tối Giản</h2>
+			<p>Chúng tôi tập trung vào bố cục bất đối xứng để kiểm tra khả năng đáp ứng (responsive) của khung lưới Grid
+				trên các thiết bị khác nhau.</p>
+		</div>
+		<div class="fashion-item">
+			<img src="https://loremflickr.com/600/800/fashion,street?lock=51" alt="Fashion 2">
+		</div>
+	</div>
+
+	<div class="footer">
+		<a href="index.html" class="btn-black">Trở về Trang Chủ</a>
+	</div>
+</body>
+
+</html>

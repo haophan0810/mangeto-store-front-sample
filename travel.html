@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Khám Phá Thế Giới - Travel</title>
+	<style>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #e0f2f1;
+			color: #004d40;
+		}
+
+		.hero {
+			position: relative;
+			height: 70vh;
+			background: url('https://source.unsplash.com/random/1600x900/?travel,nature') no-repeat center center;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			text-align: center;
+		}
+
+		.hero::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		.hero-content {
+			position: relative;
+			z-index: 1;
+		}
+
+		.hero h1 {
+			font-size: 4rem;
+			margin: 0;
+			text-transform: uppercase;
+			letter-spacing: 5px;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: -100px auto 50px;
+			padding: 50px;
+			background: white;
+			border-radius: 30px;
+			position: relative;
+			z-index: 2;
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		}
+
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			margin: 40px 0;
+		}
+
+		.gallery img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 15px;
+			transition: transform 0.3s;
+		}
+
+		.gallery img:hover {
+			transform: translateY(-10px);
+		}
+
+		.description {
+			font-size: 1.2rem;
+			line-height: 1.8;
+			color: #37474f;
+		}
+
+		.footer-nav {
+			text-align: center;
+			margin-top: 40px;
+		}
+
+		.btn {
+			display: inline-block;
+			padding: 15px 40px;
+			background: #00897b;
+			color: white;
+			text-decoration: none;
+			border-radius: 50px;
+			font-weight: bold;
+			box-shadow: 0 4px 15px rgba(0, 137, 123, 0.3);
+			transition: all 0.3s;
+		}
+
+		.btn:hover {
+			background: #00695c;
+			transform: scale(1.05);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="hero">
+		<div class="hero-content">
+			<h1>Chạm Đến Ước Mơ</h1>
+			<p>Khám phá những vùng đất mới lạ</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="description">
+			<h2>🌍 Hành Trình Không Giới Hạn</h2>
+			<p>Trang này được thiết kế để kiểm tra khả năng hiển thị các hình ảnh phong cảnh rộng lớn và độ chi tiết
+				cao. Travel là một trong những chủ đề thách thức nhất đối với việc tối ưu hóa hình ảnh trên web.</p>
+		</div>
+
+		<div class="gallery">
+			<img src="https://picsum.photos/400/300?random=11" alt="Travel 1">
+			<img src="https://picsum.photos/400/300?random=12" alt="Travel 2">
+			<img src="https://picsum.photos/400/300?random=13" alt="Travel 3">
+			<img src="https://picsum.photos/400/300?random=14" alt="Travel 4">
+		</div>
+
+		<p class="description">
+			Chúng tôi sử dụng các dịch vụ cung cấp ảnh ngẫu nhiên để mô phỏng môi trường nội dung thay đổi liên tục,
+			giúp quy trình test trở nên chân thực hơn bao giờ hết.
+		</p>
+
+		<div class="footer-nav">
+			<a href="index.html" class="btn">🏠 Trở về Trang Chủ</a>
+		</div>
+	</div>
+</body>
+
+</html>
