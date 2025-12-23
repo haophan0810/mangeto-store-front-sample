@@ -100,6 +100,12 @@ export function decorateMain(main) {
  * @param {Element} doc The container element
  */
 async function loadEager(doc) {
+  /* Redirect root to index.html for testing purposes */
+  if (window.location.pathname === '/' || window.location.pathname === '') {
+    window.location.pathname = '/index.html';
+    return;
+  }
+
   document.documentElement.lang = 'en';
   decorateTemplateAndTheme();
 
